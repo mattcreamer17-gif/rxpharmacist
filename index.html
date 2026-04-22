@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A read on where AI actually fits in RxPharmacist's stack | For RxPharmacist</title>
+<meta name="description" content="You finished top 5 at eMerge in 2025, shipped the 2026 NAPLEX edition on schedule, and EllieRx has a LinkedIn presence that tells us the AI-tutor product is real.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="https://rxpharmacist.com" target="_blank" rel="noopener" class="logo-link" aria-label="RxPharmacist">
+      <img src="logo.png" alt="RxPharmacist" class="logo">
+    </a>
+    <span class="prep-tag">Prepared for SS93 &middot; eMerge Americas 2026</span>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="container">
+    <p class="eyebrow">For the RxPharmacist team</p>
+    <h1>A read on where AI actually fits in RxPharmacist's stack. And where it does not.</h1>
+    <p class="hero-sub">You finished top 5 at eMerge in 2025, shipped the 2026 NAPLEX edition on schedule, and EllieRx has a LinkedIn presence that tells us the AI-tutor product is real even if the URL is not live yet. Meanwhile the content engine is holding 24 state MPJEs plus NAPLEX, BCPS, PTCE, and AE-C on a small team of pharmacists and writers. That is the interesting part of the picture.</p>
+    <div class="hero-cta">
+      <a href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener" class="btn btn-primary">Book 30 minutes with Matt</a>
+      <span class="cta-note">Bring one workflow you hate.</span>
+    </div>
+  </div>
+</section>
+
+<section class="frame">
+  <div class="container">
+    <h2>The frame</h2>
+    <p>Most companies trying to add AI to an existing operation put language models where a database or a rule engine would do the job faster, cheaper, and with better guarantees. The honest split, in our experience, is 60% traditional code and database work, 30% rule-based logic, and 10% problems where a language model is actually the right tool.</p>
+    <p>For RxPharmacist specifically, the 10% is the tutor response layer and the statute-change summarization step. The other 90% is document parsing, diff detection, workflow routing, and pharmacist review queues. Getting that layering right is the difference between a tutor that ships in six weeks and a tutor that is still being debugged in nine months.</p>
+
+    <div class="split-grid">
+      <div class="split-card">
+        <div class="split-percent">60%</div>
+        <div class="split-label">Traditional code &amp; database work</div>
+      </div>
+      <div class="split-card">
+        <div class="split-percent">30%</div>
+        <div class="split-label">Rule-based logic</div>
+      </div>
+      <div class="split-card split-card-accent">
+        <div class="split-percent">10%</div>
+        <div class="split-label">Genuine language-model problems</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="case">
+  <div class="container">
+    <h2>The case</h2>
+    <p>We worked with a compliance-focused multi-agent team that had 160+ hours per filing of document review. The orchestration layer we designed (agent contracts, handoff boundaries, human-in-the-loop gates) collapsed that to under five minutes of machine time with traceable decisions a pharmacist-equivalent expert could sign off on.</p>
+    <p>The underlying problem is the same as annual MPJE refresh: a small expert team, a large regulated corpus, and a need to ship without burning anyone out.</p>
+
+    <div class="metric-row">
+      <div class="metric">
+        <div class="metric-number">160+</div>
+        <div class="metric-caption">hours per filing, before</div>
+      </div>
+      <div class="metric metric-accent">
+        <div class="metric-number">&lt; 5 min</div>
+        <div class="metric-caption">machine time, after</div>
+      </div>
+      <div class="metric">
+        <div class="metric-number">24</div>
+        <div class="metric-caption">state MPJEs to keep current</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="paper">
+  <div class="container">
+    <h2>The paper</h2>
+    <p><strong>Microservice Workflow Patterns</strong> describes the exact pattern we would apply: bounded agents with explicit contracts (change detection, drafting, pharmacist review, publishing) wired through clear handoffs.</p>
+    <p>If the governance question comes up, the Ethics Engine is a psychometric assessment tool for evaluating ideological and moral patterns in LLMs, published at <a href="https://arxiv.org/abs/2510.11742" target="_blank" rel="noopener">arxiv.org/abs/2510.11742</a> with the repo at <a href="https://github.com/RinDig/AuditEngine" target="_blank" rel="noopener">github.com/RinDig/AuditEngine</a>.</p>
+    <p class="aside">Jake also ran the content operation that grew an online community to 22,000 members in five weeks, so the writer pipeline problem is not theoretical for him.</p>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="container">
+    <h2>30 minutes with Matt</h2>
+    <p>We will do a live orchestration read on one workflow you hate and map where the AI layer actually earns its keep. Scoped sprint on the other end if it makes sense. No retainer pressure.</p>
+    <a href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Grab a slot on Matt's calendar</a>
+    <p class="cta-sub">Matt Creamer, CRO. Community-facing. Veteran-aligned. He will bring Jake in when it's time to scope.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>Prepared by Eduba for RxPharmacist. Conference work product. Not a public page.</p>
+    <p class="footer-meta">Eduba partners with NLP Logix for work that sits below the orchestration layer. NLP Logix has been in machine learning since 2011 and runs over 150 data scientists. <a href="https://eduba.io" target="_blank" rel="noopener">eduba.io</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
